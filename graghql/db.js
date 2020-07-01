@@ -36,7 +36,7 @@ export const addMovie = (name, score) => {
 export const deleteMovie = id => {
   const filtedMovies = movies.filter(movie => movie.id !== id);
   if (movies.length > filtedMovies.length) {
-    movie = filtedMovies;
+    movies = filtedMovies;
     return true;
   } else {
     return false;
