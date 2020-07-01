@@ -1,5 +1,8 @@
+import { people, getById } from './db';
+
 export default {
   Query: {
-    name: () => "Jeong"
+    people: () => people,
+    person: id => getById(id)
   }
 }
